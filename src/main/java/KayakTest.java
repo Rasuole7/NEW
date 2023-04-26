@@ -10,6 +10,7 @@ public class KayakTest extends KayakBase {
     private KayakHome kayakHome;     // kuriam prieiga prie metodu
 
     public KayakTest() { // tuscias konstruktorius be jokiu argumentu
+
         super(driver);
     }
 
@@ -28,12 +29,13 @@ public class KayakTest extends KayakBase {
     public void KayakStayTest(){
       KayakBase.goTo();
       KayakHome.stays();
+
     }
 
-   @AfterClass
-    public static void tearDown(){
-    driver.quit();
-    }
+//   @AfterClass
+//    public static void tearDown(){
+//    driver.quit();
+//    }
 
 }
 

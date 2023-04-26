@@ -7,8 +7,8 @@ public class KayakBase {
 
     public KayakBase (WebDriver driver){ // kuriame konstruktoriu su savybemis
         KayakBase.driver = driver; // priskiriame savybe prie naujos reiksmes; nenaudojame this.driver, kad neraudonuotu, parasem klases pavadinimas
-        //driver.manage().window().maximize();
-       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //Duration - objektas, ofSeconds - metodai
+        driver.manage().window().maximize();
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //Duration - objektas, ofSeconds - metodai
     }
 
     public static void goTo() {
