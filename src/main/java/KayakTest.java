@@ -30,6 +30,7 @@ public class KayakTest extends KayakBase {
       KayakBase.goTo();
       KayakHome.stays();
 
+
     }
 
 //   @AfterClass
